@@ -1,6 +1,22 @@
 from typing import TypedDict
 from httpx import Response
 from clients.api_client import ApiClient
+from clients.private_http_builder import AuthenticationUserDict, \
+    get_private_http_client
+
+
+class Exercise(TypedDict):
+    """
+    Описание структуры данных урока
+    """
+    id: str
+    title: str
+    courseId: str
+    maxScore: int
+    minScore: int
+    orderIndex: int
+    description: str
+    estimatedTime: str
 
 
 class GetExercisesQueryDict(TypedDict):
@@ -23,6 +39,13 @@ class CreateExerciseRequestDict(TypedDict):
     estimatedTime: str
 
 
+class CreateExercisesResponseDict(TypedDict):
+    """
+    Описание структуры ответа на создание урока
+    """
+    exercises: list[Exercise]
+
+
 class UpdateExerciseRequestDict(TypedDict):
     """
     Описание структуры запроса на обновление урока
@@ -39,6 +62,7 @@ class ExercisesClient(ApiClient):
     """
     Клиент для работы с /api/v1/exercises
     """
+
     def get_exercises_api(self, params: GetExercisesQueryDict) -> Response:
         """
         Метод на получение уроков определенного курса
@@ -64,7 +88,8 @@ class ExercisesClient(ApiClient):
         """
         return self.post('/api/v1/exercises', json=request)
 
-    def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestDict) -> Response:
+    def update_exercise_api(self, exercise_id: str,
+                            request: UpdateExerciseRequestDict) -> Response:
         """
         Метод обновления урока
         :param exercise_id: Идентификатор урока
@@ -81,3 +106,15 @@ class ExercisesClient(ApiClient):
         """
         return self.delete(f'/api/v1/exercises/{exercise_id}')
 
+    def create_exercise(self,
+                        request: CreateExerciseRequestDict) -> CreateExercisesResponseDict:
+        response = self.create_exercise_api(request)
+        return response.json()
+
+
+def get_exercise_client(user: AuthenticationUserDict) -> ExercisesClient:
+    """
+    Функция создаёт экземпляр ExercisesClient с уже настроенным HTTP-клиентом.
+    :return: Готовый к использованию ExercisesClient.
+    """
+    return ExercisesClient(get_private_http_client(user))
