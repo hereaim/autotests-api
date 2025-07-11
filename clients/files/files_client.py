@@ -28,7 +28,7 @@ class FilesClient(ApiClient):
         return self.post('/api/v1/files',
                          data=request.model_dump(by_alias=True,
                                                  exclude={'upload_file'}),
-                         files={"upload_file": open(request['upload_file'],
+                         files={"upload_file": open(request.upload_file,
                                                     'rb')})
 
     def delete_file_api(self, file_id: str) -> Response:
