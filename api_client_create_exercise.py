@@ -7,14 +7,14 @@ from clients.files.files_client import get_files_client, \
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
-from tools.faker import get_random_email
+from tools.fakers import fake
 
 # Инициализация публичного клиента пользователя
 public_user_client = get_public_users_client()
 
 # Создание пользователя
 create_user_request = CreateUserRequestSchema(
-    email=get_random_email(),
+    email=fake.email(),
     password="string",
     first_name="string",
     last_name="string",
