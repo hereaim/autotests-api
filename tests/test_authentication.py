@@ -1,5 +1,7 @@
 from http import HTTPStatus
 
+import pytest
+
 from clients.users.public_users_client import get_public_users_client
 from clients.authentication.authentication_client import \
     get_authentication_client
@@ -11,6 +13,8 @@ from tools.assertions.schema import validate_json_schema
 from tools.assertions.authentication import assert_login_response
 
 
+@pytest.mark.authentication
+@pytest.mark.regression
 def test_create_user():
     # Инициализируем API-клиент для работы с пользователями
     public_users_client = get_public_users_client()
