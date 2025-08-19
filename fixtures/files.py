@@ -12,7 +12,7 @@ class FileFixture(BaseModel):
 
 
 @pytest.fixture
-def file_client(function_user: UserFixture) -> FilesClient:
+def files_client(function_user: UserFixture) -> FilesClient:
     return get_files_client(function_user.authentication_user)
 
 
