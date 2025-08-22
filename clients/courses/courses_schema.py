@@ -13,7 +13,7 @@ class CourseSchema(BaseModel):
     id: str
     title: str
     max_score: int = Field(alias="maxScore")
-    minScore: int = Field(alias="minScore")
+    min_score: int = Field(alias="minScore")
     description: str
     preview_file: FileSchema = Field(alias="previewFile")
     estimated_time: str = Field(alias="estimatedTime")
@@ -27,6 +27,13 @@ class GetCoursesQuerySchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     user_id: str = Field(alias="userId")
+
+
+class GetCoursesResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на получение списка курсов
+    """
+    courses: list[CourseSchema]
 
 
 class CreateCourseRequestSchema(BaseModel):
@@ -58,7 +65,14 @@ class UpdateCourseRequestSchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     title: str | None = Field(default_factory=fake.sentence)
-    maxScore: int | None = Field(alias="maxScore", default_factory=fake.max_score)
-    minScore: int | None = Field(alias="minScore", default_factory=fake.min_score)
+    max_score: int | None = Field(alias="maxScore", default_factory=fake.max_score)
+    min_score: int | None = Field(alias="minScore", default_factory=fake.min_score)
     description: str | None = Field(default_factory=fake.text)
-    estimatedTime: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
+    estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
+
+
+class UpdateCourseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на обновление курса
+    """
+    course: CourseSchema

@@ -12,7 +12,7 @@ class ApiClient:
         self.client = client
 
     def get(self, url: URL | str,
-            params: QueryParams | None = None) -> Response:
+            params: QueryParams | dict | None = None) -> Response:
         """
         Выполняет GET-запрос.
         :param url: URL-адрес эндпоинта.
