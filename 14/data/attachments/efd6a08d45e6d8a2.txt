@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUzLjk3Mjg0NiIsInVzZXJfaWQiOiJjYjUwOGFlOC03NmExLTRiNTEtOWM0Yi1iZjc1MTM5OWVkYzgifQ.6by1QvFjszPCs5mTPhMFab2BTLrywkKwW8iecBQYSyc' \
+   -H 'content-length: 416' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Economic help stand.","maxScore":61,"minScore":32,"description":"Shake go whole body property research discussion five. Important outside nearly visit difference this war.\nAnd car school debate.\nSection challenge while machine to other. System worry level respond.","estimatedTime":"3 weeks","previewFileId":"72563958-bf14-4364-b8f0-508092ef5a01","createdByUserId":"cb508ae8-76a1-4b51-9c4b-bf751399edc8"}'

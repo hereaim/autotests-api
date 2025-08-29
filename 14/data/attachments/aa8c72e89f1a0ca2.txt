@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/exercises' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjU1LjE2MjU1MCIsInVzZXJfaWQiOiJkNDExOWZjYS01NzVmLTQ4YTktOWRhOC1jZTgyNDBiYjhhYTQifQ.GTVzRe3fr-3XzWwoQSubVuiIlcbXAQ0YUVPYJ35Qna8' \
+   -H 'content-length: 365' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Run research check impact former.","courseId":"2f380b20-3e79-4c90-81fe-e751a33ab24e","maxScore":66,"minScore":24,"orderIndex":87,"description":"Would approach understand before piece over south should. Door good agency firm those should.\nMean truth candidate role you car stage. Decide perform employee even become which sort.","estimatedTime":"1 weeks"}'

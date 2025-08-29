@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUyLjgxMjI3MSIsInVzZXJfaWQiOiI1NzI3M2Y1YS0wOGM2LTQwMTctYjQ2Yi1lOWIzY2FlYmE5MWMifQ.oJ6j2aI9o-OAk_fwkTkEGm5WfEeazCt32NaUtASrb7o' \
+   -H 'content-length: 319' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Mr open capital hot dinner.","maxScore":97,"minScore":40,"description":"Less he product democratic together. Name leg method threat Mr near.\nGood project less increase.","estimatedTime":"6 weeks","previewFileId":"db209043-f058-4c24-aae6-5be5ae6fcaa1","createdByUserId":"57273f5a-08c6-4017-b46b-e9b3caeba91c"}'

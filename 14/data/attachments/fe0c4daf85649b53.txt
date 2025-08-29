@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjU2LjEwNzczMiIsInVzZXJfaWQiOiI1Yzg4ZGI3YS1jNWQyLTQzYjAtYjJlNy00MmI3ZjQ3ZDJmZDAifQ.B2kdtbWviuGjJRY5NBZ8Fp-7cdn2KuMVpRo681ulAY8' \
+   -H 'content-length: 415' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Purpose every imagine in since church.","maxScore":86,"minScore":1,"description":"Approach fear adult born dinner heart majority. Great how think computer.\nScientist believe when bank two discuss also. Join yard bring with collection. Challenge example minute can.","estimatedTime":"1 weeks","previewFileId":"c89a1a03-0a4a-44f5-98b6-52425afa5345","createdByUserId":"5c88db7a-c5d2-43b0-b2e7-42b7f47d2fd0"}'

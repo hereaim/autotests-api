@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/exercises/be734cad-2203-4112-a081-323e8e095443' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUzLjk3Mjg0NiIsInVzZXJfaWQiOiJjYjUwOGFlOC03NmExLTRiNTEtOWM0Yi1iZjc1MTM5OWVkYzgifQ.6by1QvFjszPCs5mTPhMFab2BTLrywkKwW8iecBQYSyc' \
+   -H 'content-length: 283' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Put know really look skin garden.","maxScore":51,"minScore":32,"orderIndex":40,"description":"Family manager large nothing area start. If rich care daughter table trade partner.\nPick film gun our. Including culture finally mission forward fund.","estimatedTime":"7 weeks"}'

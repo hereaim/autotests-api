@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/courses/538428b9-9e7a-4384-8499-95511a497b66' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUyLjIyOTIxNCIsInVzZXJfaWQiOiIwYjEwZmY3MS1hMjA3LTQ2YzAtYTU1MC01OGEzYjRlNzQxZjcifQ.u-idMIdrbIApwO-NGkjJ_7M3Oy1MwxiNaZK6Mal3vF8' \
+   -H 'content-length: 178' \
+   -H 'content-type: application/json' \
+   -d '{"title":"But scientist road wear instead.","maxScore":65,"minScore":10,"description":"Charge force smile listen evening. Relate teacher election ago.","estimatedTime":"2 weeks"}'

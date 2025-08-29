@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUzLjcwMDc1NSIsInVzZXJfaWQiOiJlNjJiZGM0NC0yOGRiLTRlNTktOTU3OS0xYzI4YTRmYjFjMjAifQ.GuRltoXI-PVoJFIDwvlqGmDtp8-dnaL0WHL7nAixzCc' \
+   -H 'content-length: 326' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Issue increase year pattern.","maxScore":98,"minScore":2,"description":"General wear skin cold ball democratic. Eye shoulder result phone south. Analysis military can customer.","estimatedTime":"1 weeks","previewFileId":"d857a186-8a65-4236-93f2-0c69aca6962f","createdByUserId":"e62bdc44-28db-4e59-9579-1c28a4fb1c20"}'

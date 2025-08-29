@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/exercises' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUzLjk3Mjg0NiIsInVzZXJfaWQiOiJjYjUwOGFlOC03NmExLTRiNTEtOWM0Yi1iZjc1MTM5OWVkYzgifQ.6by1QvFjszPCs5mTPhMFab2BTLrywkKwW8iecBQYSyc' \
+   -H 'content-length: 279' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Care bad southern eye guess source sea.","courseId":"f90bd511-3b5c-4d9d-b4d6-88fcbea9f14b","maxScore":85,"minScore":21,"orderIndex":42,"description":"We radio animal red recently group.\nCell sport ok media difference. Enough collection Mr.","estimatedTime":"10 weeks"}'

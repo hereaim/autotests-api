@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/be734cad-2203-4112-a081-323e8e095443
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/be734cad-2203-4112-a081-323e8e095443
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to '200'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Put know really look skin garden.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '51'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '32'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to '40'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Family manager large nothing area start. If rich care daughter table trade partner.
+Pick film gun our. Including culture finally mission forward fund.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '7 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjU0Ljg5MDE1MCIsInVzZXJfaWQiOiI1NjVkNTIyZS1mNzQzLTRmOGYtYWQwNS1jMWRkZGQ2Y2MyM2MifQ.Y5lLBYd9Kgc9F7-3dENXjPmbgxDpVpU2WCQMIebLALk' \
+   -H 'content-length: 399' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Your change reflect respond tend person.","maxScore":55,"minScore":48,"description":"Explain until try music of. We imagine traditional majority. International what rule authority she bag subject.\nSound daughter agency fine. Once ok size bill task.","estimatedTime":"9 weeks","previewFileId":"8cc0df42-72ae-49d6-9f94-f81f1b97a4f7","createdByUserId":"565d522e-f743-4f8f-ad05-c1dddd6cc23c"}'

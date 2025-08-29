@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/exercises' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjU0Ljg5MDE1MCIsInVzZXJfaWQiOiI1NjVkNTIyZS1mNzQzLTRmOGYtYWQwNS1jMWRkZGQ2Y2MyM2MifQ.Y5lLBYd9Kgc9F7-3dENXjPmbgxDpVpU2WCQMIebLALk' \
+   -H 'content-length: 342' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Force financial later town believe.","courseId":"9f2966e4-86dd-4607-a3a9-49c9c2b40216","maxScore":94,"minScore":23,"orderIndex":59,"description":"Ball event nature project which bar this. Crime hand term half I teach. Themselves dinner then sound for.\nTeacher water pass policy. Analysis society entire.","estimatedTime":"6 weeks"}'

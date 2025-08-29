@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjEzOjUyLjIyOTIxNCIsInVzZXJfaWQiOiIwYjEwZmY3MS1hMjA3LTQ2YzAtYTU1MC01OGEzYjRlNzQxZjcifQ.u-idMIdrbIApwO-NGkjJ_7M3Oy1MwxiNaZK6Mal3vF8' \
+   -H 'content-length: 342' \
+   -H 'content-type: application/json' \
+   -d '{"title":"National detail including travel.","maxScore":87,"minScore":23,"description":"Themselves politics religious reason. Cause final special develop very maybe worry over. Way something gun weight.","estimatedTime":"5 weeks","previewFileId":"4fa8dbdf-1be6-4cd4-9657-57fecef18d27","createdByUserId":"0b10ff71-a207-46c0-a550-58a3b4e741f7"}'
