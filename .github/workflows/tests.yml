@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
   run_test_server:
     needs: prepare
     runs-on: ubuntu-latest
@@ -38,9 +39,12 @@ jobs:
           JWT_ACCESS_TOKEN_EXPIRE: 1800 # Время жизни access token (в секундах)
           JWT_REFRESH_TOKEN_EXPIRE: 5184000 # Время жизни refresh token (в секундах)
         run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course &
+
   run_tests:
     needs: run_test_server
     runs-on: ubuntu-latest
+
+    steps:
       - name: Установка зависимостей тестов
         run: |
           python -m pip install --upgrade pip
