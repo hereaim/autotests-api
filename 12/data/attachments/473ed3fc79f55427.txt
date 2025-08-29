@@ -1,0 +1,23 @@
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:25 Make GET request to http://localhost:8000/api/v1/exercises/98ffac94-35c5-40af-a710-1993b8b384ea
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/98ffac94-35c5-40af-a710-1993b8b384ea
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to '200'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'id' equals to '98ffac94-35c5-40af-a710-1993b8b384ea'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Week race book front million collection join leave.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '59'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '23'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to '51'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Recent little onto thus.
+Away adult manager month physical. Food daughter no serve black heart yet. Activity involve let idea street each four. Past draw shoulder whose campaign what western table.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '2 weeks'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'course_id' equals to '02f901d5-b0df-41b0-9de3-81adbf3af620'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

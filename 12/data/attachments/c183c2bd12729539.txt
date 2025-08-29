@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ2LjEwMjE0MiIsInVzZXJfaWQiOiI4MGU0MTM5Zi1iZmM4LTRjYTgtYWY5MS1iMTNlNzYzZmNmOGUifQ.X4klhYaz2D1TvdCctSAl8NQLkjvU0r424jzFQFWHSew' \
+   -H 'content-length: 402' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Town usually material none side.","maxScore":75,"minScore":13,"description":"Security young reduce. Manager history catch continue will everything.\nFilm commercial boy site site. Expect hear that detail.\nPretty energy soon popular do economy section.","estimatedTime":"1 weeks","previewFileId":"21a30499-751b-498e-8f14-01db9453bec5","createdByUserId":"80e4139f-bfc8-4ca8-af91-b13e763fcf8e"}'

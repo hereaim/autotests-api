@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/exercises' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ2LjEwMjE0MiIsInVzZXJfaWQiOiI4MGU0MTM5Zi1iZmM4LTRjYTgtYWY5MS1iMTNlNzYzZmNmOGUifQ.X4klhYaz2D1TvdCctSAl8NQLkjvU0r424jzFQFWHSew' \
+   -H 'content-length: 311' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Point economy amount allow cell management leg.","courseId":"41aec6b4-2e5d-445f-a27e-ac3367f95d1a","maxScore":50,"minScore":38,"orderIndex":31,"description":"Chair participant should close think southern TV would. Realize article miss nice size. To heavy write summer them.","estimatedTime":"1 weeks"}'

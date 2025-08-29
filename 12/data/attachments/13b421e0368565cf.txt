@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ3LjI3NTE5OCIsInVzZXJfaWQiOiJmNGE5OTNkNy04NDRmLTQ4YjgtYjk5Yi1kYjg3M2Q0YjdiNWEifQ.lQ1CxznpLhkDHUnjjfzoYHf732X-OVKfmEkz0P3edg4' \
+   -H 'content-length: 402' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Care teach know commercial.","maxScore":65,"minScore":26,"description":"Ago hold would job. Summer color each member design long involve rest.\nWait race list natural could. Cause machine most final across while. Spend consumer factor especially reach.","estimatedTime":"1 weeks","previewFileId":"f073f0ac-f561-4799-ab4c-0442f152b3bd","createdByUserId":"f4a993d7-844f-48b8-b99b-db873d4b7b5a"}'

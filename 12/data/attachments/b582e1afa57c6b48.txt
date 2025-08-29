@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ1LjUxMzIzNiIsInVzZXJfaWQiOiI4MjgzMDA3Zi1lZWQwLTRiOGItOTVlMy0wZTk2NjdjYzZhMTUifQ.mzQ8UeyOrA-lOMY_8jxMqOEQQa3uGd7LLmzIxqvRdyM' \
+   -H 'content-length: 358' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Agency than reality project.","maxScore":99,"minScore":11,"description":"Order amount church between know religious scene. Forward mention cultural according weight. Number make force least hundred including.","estimatedTime":"1 weeks","previewFileId":"c799235a-90b4-410b-8ac2-7c429f1221f5","createdByUserId":"8283007f-eed0-4b8b-95e3-0e9667cc6a15"}'

@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/courses/8d4fea8c-abd6-44ed-820b-1d77d1e0b797' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ0Ljg3NTE1NyIsInVzZXJfaWQiOiJiNTNmNGI3Yi03YjRjLTQ1YzktODgyMy04OWEwM2JhNDA0YmUifQ.GTpdu0HU5ode3M7egGWOH8Fz3AGGRWgg-1wLITA7LEo' \
+   -H 'content-length: 266' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Weight respond determine miss dog throw this.","maxScore":75,"minScore":35,"description":"Public recently bag go cold two down. Tell however defense them.\nMarket difficult single language. Upon real discussion partner win door.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to '200'
+INFO     COURSES_ASSERTIONS:courses.py:88 Check create course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Agency than reality project.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '99'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '11'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Order amount church between know religious scene. Forward mention cultural according weight. Number make force least hundred including.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '1 weeks'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'preview_file_id' equals to 'c799235a-90b4-410b-8ac2-7c429f1221f5'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'created_by_user_id' equals to '8283007f-eed0-4b8b-95e3-0e9667cc6a15'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

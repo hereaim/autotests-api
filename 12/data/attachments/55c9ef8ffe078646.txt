@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ2LjY5NDAwMSIsInVzZXJfaWQiOiIwNGQ0MzhmYS1hNzE3LTQyNDMtOGU0Yy03OWEzMGVhMWM0N2YifQ.zDUfYEKSfY-f4kj5g5_njlFBxeW4qMTEy4mXXyiQP0o' \
+   -H 'content-length: 270' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Tell himself example instead piece people.","maxScore":59,"minScore":9,"description":"Amount hospital the into research.","estimatedTime":"3 weeks","previewFileId":"d4ed9181-a488-43e7-a900-839cfbfbf8ff","createdByUserId":"04d438fa-a717-4243-8e4c-79a30ea1c47f"}'

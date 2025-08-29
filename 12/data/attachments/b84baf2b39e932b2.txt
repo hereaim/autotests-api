@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ3LjkxNDYzMSIsInVzZXJfaWQiOiI5OWJlNDdjYy0xZWI0LTRlYmYtODE4Yi1kMGNiOWVjNzEwZmUifQ.hVpmtqAH3MYAZB3lHa06ACeR7v2mrlhQDMAWRJFLqZk' \
+   -H 'content-length: 348' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Baby level after force very age.","maxScore":70,"minScore":12,"description":"Media education need why hold. Think control cost exactly mouth individual.\nSimply head enjoy weight score total summer.","estimatedTime":"3 weeks","previewFileId":"5a4cc32d-9acc-419c-9b38-eb6a5d6cb666","createdByUserId":"99be47cc-1eb4-4ebf-818b-d0cb9ec710fe"}'

@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA5OjI2OjQ0LjI4NzI3MyIsInVzZXJfaWQiOiJiZDM4MGRhMS1jYWZhLTRhMmMtYWY2YS03ZTM5ZTdiYWViNzkifQ.PZqfpPESjOPX5notC9mvapw7AuthAzowcLZPNeuNlU0' \
+   -H 'content-length: 410' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Garden involve off three nature dinner.","maxScore":84,"minScore":5,"description":"Himself focus any whole current notice data reflect.\nAnother mother blue wrong against level effort strategy. Project bill kind all only sit space fear. Write me almost almost.","estimatedTime":"1 weeks","previewFileId":"f93e2c5f-14b3-48da-ba08-fdff5472aa9d","createdByUserId":"bd380da1-cafa-4a2c-af6a-7e39e7baeb79"}'
