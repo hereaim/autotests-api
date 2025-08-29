@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/courses/40f74203-36e8-4c80-a1e9-ed50d6afaad9' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjI3LjAwMDExMSIsInVzZXJfaWQiOiI0Y2QzNTRmMy00NDljLTQ0YTEtYjA0My1jZWRmOTdhZTA5ZTQifQ.0EdZiWcdvqRXMk-Y0ffV2z_PdCyYYpVCtIdjj1FXCFg' \
+   -H 'content-length: 226' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Magazine still life figure lawyer character evening.","maxScore":61,"minScore":11,"description":"Color various interest air hundred treatment. Government only whose street. Fine best them.","estimatedTime":"2 weeks"}'

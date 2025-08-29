@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjMwLjY3OTE5MyIsInVzZXJfaWQiOiI2YjFiY2RkYi1lMmM0LTRjMWUtOTg3Yi1iMzNkZTlmNjhlNTYifQ.AYY0jzPRnb7mK0WgVJjxHu7YYpQk8nYuq9UFEwTf4Vc' \
+   -H 'content-length: 384' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Model walk lawyer.","maxScore":65,"minScore":23,"description":"Either road official help while. May son method test Democrat hospital. Be change buy bring bed just oil.\nScientist board foot long let. Foreign spend tax TV whom across.","estimatedTime":"1 weeks","previewFileId":"a748c352-e5e0-4ad1-b105-900567f62a4d","createdByUserId":"6b1bcddb-e2c4-4c1e-987b-b33de9f68e56"}'

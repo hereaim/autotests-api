@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjI4LjIyODgyMiIsInVzZXJfaWQiOiIyMWJmOWI3Yy0wMjdjLTQxODUtODcxYy1mYzVjZWNkYjZjOTUifQ.dsQvbZ-ue2anGaFXj_XbI15VRJilXz_-SA3PFjS5tcc' \
+   -H 'content-length: 387' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Public major action late forward.","maxScore":55,"minScore":43,"description":"Popular process class sense hand general. Job tree especially cultural.\nNeed begin thank less herself anything everyone.\nReach worry could join might money.","estimatedTime":"10 weeks","previewFileId":"481b5cc1-ad47-4aa7-a581-3ac2c80ea2eb","createdByUserId":"21bf9b7c-027c-4185-871c-fc5cecdb6c95"}'

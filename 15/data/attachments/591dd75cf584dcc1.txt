@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjMwLjA0NDU3MCIsInVzZXJfaWQiOiJkNGFlNGZmMi01OWM2LTQ5NWUtODc3MC03ZDc5NmIzMGY4YmYifQ.CHyRYHNpHpHQAnTxkBosGOuXkAT8AjUkMesdwmWrHHo' \
+   -H 'content-length: 415' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Once after Mr morning dog position seek.","maxScore":71,"minScore":9,"description":"Sing away end. Woman have send site maintain majority treatment. Nice plant see care those under sit.\nGoal morning sense size type me. Hear when bad minute similar kitchen purpose.","estimatedTime":"4 weeks","previewFileId":"44d49662-ea3a-4827-a5af-41160a3b4274","createdByUserId":"d4ae4ff2-59c6-495e-8770-7d796b30f8bf"}'

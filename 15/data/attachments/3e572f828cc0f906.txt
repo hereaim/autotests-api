@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/exercises/945e4b7c-ca73-4512-9d0e-b61d7e30f6e9' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjI4LjgxNTk5NSIsInVzZXJfaWQiOiI5YTEyMzMyNy1mNTQ5LTQyYzgtYTFhOC04YjRiYWQ0NGJjMDYifQ.s_7xeurDQIyk3n8SPCVoWhyZZFlMWVGxBEuTAioFPhY' \
+   -H 'content-length: 271' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Authority attack finally policy manager laugh still everybody.","maxScore":87,"minScore":47,"orderIndex":95,"description":"Turn work teach can certainly could song. Design room old against. Later those run community meeting price if.","estimatedTime":"5 weeks"}'

@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjE3OjI4LjgxNTk5NSIsInVzZXJfaWQiOiI5YTEyMzMyNy1mNTQ5LTQyYzgtYTFhOC04YjRiYWQ0NGJjMDYifQ.s_7xeurDQIyk3n8SPCVoWhyZZFlMWVGxBEuTAioFPhY' \
+   -H 'content-length: 345' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Fear make wear course director fish.","maxScore":59,"minScore":36,"description":"At within truth teacher. Pass effect fill stage at information. Artist hard color different born age practice may.","estimatedTime":"7 weeks","previewFileId":"e240e381-8854-430d-9757-eab4bf5f0242","createdByUserId":"9a123327-f549-42c8-a1a8-8b4bad44bc06"}'
