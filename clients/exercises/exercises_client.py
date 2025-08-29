@@ -1,5 +1,6 @@
 import allure
 from httpx import Response
+from clients.api_coverage import tracker
 from clients.api_client import ApiClient
 from clients.private_http_builder import AuthenticationUserSchema, \
     get_private_http_client
@@ -16,6 +17,7 @@ class ExercisesClient(ApiClient):
     """
 
     @allure.step("Get exercises")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def get_exercises_api(self, params: GetExercisesQuerySchema) -> Response:
         """
         Метод на получение уроков определенного курса
@@ -25,6 +27,7 @@ class ExercisesClient(ApiClient):
         return self.get(f'{APIRoutes.EXERCISES}', params=params.model_dump(by_alias=True))
 
     @allure.step("Get exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения урока
@@ -34,6 +37,7 @@ class ExercisesClient(ApiClient):
         return self.get(f'{APIRoutes.EXERCISES}/{exercise_id}')
 
     @allure.step("Create exercise")
+    @tracker.track_coverage_httpx(APIRoutes.EXERCISES)
     def create_exercise_api(self, request: CreateExerciseRequestSchema):
         """
         Метода создания урока
@@ -45,6 +49,7 @@ class ExercisesClient(ApiClient):
                          json=request.model_dump(by_alias=True))
 
     @allure.step("Update exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(self, exercise_id: str,
                             request: UpdateExerciseRequestSchema) -> Response:
         """
@@ -57,6 +62,7 @@ class ExercisesClient(ApiClient):
                           json=request.model_dump(by_alias=True))
 
     @allure.step("Delete exercise by id {exercise_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаления урока

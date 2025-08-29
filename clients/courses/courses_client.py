@@ -1,6 +1,7 @@
 import allure
 from httpx import Response
 from clients.api_client import ApiClient
+from clients.api_coverage import tracker
 from clients.private_http_builder import get_private_http_client, \
     AuthenticationUserSchema
 from clients.courses.courses_schema import GetCoursesQuerySchema, \
@@ -15,6 +16,7 @@ class CoursesClient(ApiClient):
     """
 
     @allure.step("Get courses")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Метод получения списка курсов
@@ -24,6 +26,7 @@ class CoursesClient(ApiClient):
         return self.get(f'{APIRoutes.COURSES}', params=query.model_dump(by_alias=True))
 
     @allure.step("Get course by id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса
@@ -33,6 +36,7 @@ class CoursesClient(ApiClient):
         return self.get(f'{APIRoutes.COURSES}/{course_id}')
 
     @allure.step("Create course")
+    @tracker.track_coverage_httpx(APIRoutes.COURSES)
     def create_course_api(self,
                           request: CreateCourseRequestSchema) -> Response:
         """
@@ -44,6 +48,7 @@ class CoursesClient(ApiClient):
         return self.post(f'{APIRoutes.COURSES}', json=request.model_dump(by_alias=True))
 
     @allure.step("Update course by id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def update_course_api(self, course_id: str,
                           request: UpdateCourseRequestSchema) -> Response:
         """
@@ -55,6 +60,7 @@ class CoursesClient(ApiClient):
         return self.patch(f'{APIRoutes.COURSES}/{course_id}', json=request.model_dump(by_alias=True))
 
     @allure.step("Delete course by id {course_id}")
+    @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
     def delete_course_api(self, course_id: str) -> Response:
         """
         Метод удаления курса
