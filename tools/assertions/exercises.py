@@ -1,12 +1,18 @@
+import allure
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, \
     CreateExerciseRequestSchema, GetExerciseResponseSchema, ExerciseSchema, \
     UpdateExerciseResponseSchema, UpdateExerciseRequestSchema, \
     GetExercisesResponseSchema
 from clients.errors_schema import InternalErrorResponseSchema
+from tools.logger import get_logger
 from tools.assertions.base import assert_equal, assert_length
 from tools.assertions.errors import assert_internal_error_response
 
 
+logger = get_logger("EXERCISES_ASSERTIONS")
+
+
+@allure.step("Check create exercise response")
 def assert_create_exercise_response(expected: CreateExerciseRequestSchema,
                                     actual: CreateExerciseResponseSchema):
     """
@@ -28,6 +34,7 @@ def assert_create_exercise_response(expected: CreateExerciseRequestSchema,
     assert_equal(actual.exercise.course_id, expected.course_id, 'course_id')
 
 
+@allure.step("Check exercise")
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     """
     Проверяет, что фактические данные урока соответствуют ожидаемым.
@@ -53,6 +60,7 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
                  expected.course_id, 'course_id')
 
 
+@allure.step("Check get exercise response")
 def assert_get_exercise_response(
         get_exercise_response: GetExerciseResponseSchema,
         create_exercise_response: CreateExerciseResponseSchema):
@@ -67,6 +75,7 @@ def assert_get_exercise_response(
                     create_exercise_response.exercise)
 
 
+@allure.step("Check update exercise response")
 def assert_update_exercise_response(
         request: UpdateExerciseRequestSchema,
         response: UpdateExerciseResponseSchema
@@ -89,6 +98,7 @@ def assert_update_exercise_response(
                  'estimated_time')
 
 
+@allure.step("Check exercise not found response")
 def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     """
     Функция для проверки ошибки, если урон не найден.

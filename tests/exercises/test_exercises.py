@@ -1,6 +1,8 @@
 from http import HTTPStatus
 
 import pytest
+import allure
+from allure_commons.types import Severity
 
 from clients.exercises.exercises_client import ExercisesClient
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, \
@@ -10,6 +12,10 @@ from clients.exercises.exercises_schema import CreateExerciseRequestSchema, \
 from clients.errors_schema import InternalErrorResponseSchema
 from fixtures.courses import CourseFixture
 from fixtures.exercises import ExerciseFixture
+from tools.allure.tags import AllureTags
+from tools.allure.epics import AllureEpic
+from tools.allure.stories import AllureStory
+from tools.allure.features import AllureFeature
 from tools.assertions.exercises import assert_create_exercise_response, \
     assert_get_exercise_response, assert_update_exercise_response, \
     assert_exercise_not_found_response, assert_get_exercises_response
@@ -19,7 +25,17 @@ from tools.assertions.schema import validate_json_schema
 
 @pytest.mark.exercises
 @pytest.mark.regression
+@allure.tag(AllureTags.EXERCISES, AllureTags.REGRESSION)
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.EXERCISES)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.suite(AllureFeature.EXERCISES)
 class TestExercises:
+    @allure.tag(AllureTags.CREATE_ENTITY)
+    @allure.story(AllureStory.CREATE_ENTITY)
+    @allure.title("Create exercise")
+    @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureStory.CREATE_ENTITY)
     def test_create_exercise(self,
                              function_course: CourseFixture,
                              exercises_client: ExercisesClient
@@ -37,6 +53,11 @@ class TestExercises:
         validate_json_schema(response.json(),
                              response_data.model_json_schema())
 
+    @allure.tag(AllureTags.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.title("Get exercise")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     def test_get_exercise(self,
                           exercises_client: ExercisesClient,
                           function_exercise: ExerciseFixture):
@@ -50,6 +71,11 @@ class TestExercises:
         validate_json_schema(response.json(),
                              response_data.model_json_schema())
 
+    @allure.tag(AllureTags.UPDATE_ENTITY)
+    @allure.story(AllureStory.UPDATE_ENTITY)
+    @allure.title("Update exercise")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.UPDATE_ENTITY)
     def test_update_exercise(self, exercises_client: ExercisesClient,
                              function_exercise: ExerciseFixture):
         request = UpdateExerciseRequestSchema(
@@ -66,6 +92,11 @@ class TestExercises:
         validate_json_schema(response.json(),
                              response_data.model_json_schema())
 
+    @allure.tag(AllureTags.DELETE_ENTITY)
+    @allure.story(AllureStory.DELETE_ENTITY)
+    @allure.title("Delete exercise")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.DELETE_ENTITY)
     def test_delete_exercise(self, exercises_client: ExercisesClient,
                              function_exercise: ExerciseFixture):
         delete_response = exercises_client.delete_exercise_api(
@@ -83,10 +114,16 @@ class TestExercises:
         validate_json_schema(get_response.json(),
                              get_response_data.model_json_schema())
 
+    @allure.tag(AllureTags.GET_ENTITY)
+    @allure.story(AllureStory.GET_ENTITY)
+    @allure.title("Get exercises")
+    @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureStory.GET_ENTITY)
     def test_get_exercises(self, exercises_client: ExercisesClient,
                            function_exercise: ExerciseFixture,
                            function_course: CourseFixture):
-        query = GetExercisesQuerySchema(course_id=function_course.response.course.id)
+        query = GetExercisesQuerySchema(
+            course_id=function_course.response.course.id)
         response = exercises_client.get_exercises_api(query)
         response_data = GetExercisesResponseSchema.model_validate_json(
             response.text
@@ -94,5 +131,5 @@ class TestExercises:
         assert_status_code(response.status_code, HTTPStatus.OK)
         assert_get_exercises_response(response_data,
                                       [function_exercise.response])
-        validate_json_schema(response.json(), response_data.model_json_schema())
-
+        validate_json_schema(response.json(),
+                             response_data.model_json_schema())
