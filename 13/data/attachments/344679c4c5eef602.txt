@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE5Ljg3MzM5NSIsInVzZXJfaWQiOiJiNWY2YTE1Yy0zZWRmLTQxYTEtYmUxNi03Mzg3N2Y3ODdmOTUifQ.1MV7YVZ54GIeHAXonajjPUH3GreJERy7yiWQqwAnNyI' \
+   -H 'content-length: 443' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Another drive environment nearly team image store.","maxScore":91,"minScore":40,"description":"Window doctor save realize accept. Give culture allow put attack floor. Common land opportunity live mouth discussion available.\nCity two ball dream build city. Son piece edge person clearly along.","estimatedTime":"6 weeks","previewFileId":"95dd47fe-6682-4992-93e8-127aabe2b3a7","createdByUserId":"b5f6a15c-3edf-41a1-be16-73877f787f95"}'

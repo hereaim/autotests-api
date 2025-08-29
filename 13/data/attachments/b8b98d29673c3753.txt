@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE2LjUzMDUzNyIsInVzZXJfaWQiOiJmMzkyYjMyMi01OTBlLTRiMDctOTNlNC1kY2JhMDNmMzMzNDcifQ.YIS_HGG35iZ2023GpFJURmUFb4Grgqk5Gtc-Q85qSzc' \
+   -H 'content-length: 361' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Simple message better before.","maxScore":88,"minScore":35,"description":"Keep however around upon maybe want. Raise national central record by outside difference order. Factor everybody particularly laugh born.","estimatedTime":"3 weeks","previewFileId":"f3377f0f-f054-4056-b8af-0b859028b967","createdByUserId":"f392b322-590e-4b07-93e4-dcba03f33347"}'

@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE3LjcyNDQ3MSIsInVzZXJfaWQiOiI1NWJlN2IyNi1hNjE1LTRlMDAtOTdkYy04OWYyNzk1NGI1MjkifQ.-6R5KRvQK2P8hQktP4CKe2AKThrlZKtCCVhgkCmbqd4' \
+   -H 'content-length: 391' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Low girl kid until tonight threat.","maxScore":80,"minScore":9,"description":"Indicate truth trouble. Federal defense positive last north wind.\nGlass must pay stand study. Foreign kitchen analysis kind. Usually impact goal generation check.","estimatedTime":"6 weeks","previewFileId":"fa4cb9b8-a11b-43ac-8022-737590aa788a","createdByUserId":"55be7b26-a615-4e00-97dc-89f27954b529"}'

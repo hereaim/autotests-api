@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE4LjY0MzM2OCIsInVzZXJfaWQiOiJhMGQ0ODhlOC01ZWYyLTQ3N2MtOTVjNi00ZGZiOTMzNWE0N2UifQ.uPDTHZrjqOUpiZAiIagb6qdORmdBBjU2Gf2HQr-fKGs' \
+   -H 'content-length: 379' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Difficult movie different month.","maxScore":66,"minScore":15,"description":"Tend still project three why financial. Least stock make long. White movie audience ball.\nScene here perhaps knowledge. Increase civil plan thing this.","estimatedTime":"1 weeks","previewFileId":"554dbffa-5bcc-4657-a297-a1d83e45c23b","createdByUserId":"a0d488e8-5ef2-477c-95c6-4dfb9335a47e"}'

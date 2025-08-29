@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/exercises' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE3LjQ1MDA0MyIsInVzZXJfaWQiOiIyMzdiMDRjNi02ZTcyLTQ2MTYtYTkzMC0yZWFlNWU5MjM5MDcifQ.cQdpjNoo9kG_eqAx5SWp3iUbyMZPhAKA30M3tqk-2sQ' \
+   -H 'content-length: 393' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Father song type treatment my once impact such.","courseId":"42de6e5b-3f49-4c1e-b674-53d7f2a447a7","maxScore":98,"minScore":13,"orderIndex":75,"description":"Action wonder former enter share difference. Trouble animal study himself project after manage. Worker edge world protect eye last.\nIn well traditional. Today point such response half minute born.","estimatedTime":"7 weeks"}'

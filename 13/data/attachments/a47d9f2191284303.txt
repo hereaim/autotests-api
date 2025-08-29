@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE1LjExMzg3MSIsInVzZXJfaWQiOiIxOWVkNDYxNC05ZGU1LTRlMTYtYWFkMi02NmJkZWY5ZDY2ZjAifQ.N7A8hQSdmUSubg6Q8Rxr1F7HlEfNC_n0pXAHtAd8VgU' \
+   -H 'content-length: 325' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Nice like enjoy always.","maxScore":76,"minScore":27,"description":"Letter professor most edge name.\nStation moment fine key finally. Strategy last measure trip indicate Mrs.","estimatedTime":"5 weeks","previewFileId":"2f0ee0ad-232a-4107-9c5b-603b89ca5e4c","createdByUserId":"19ed4614-9de5-4e16-aad2-66bdef9d66f0"}'

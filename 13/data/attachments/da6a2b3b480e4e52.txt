@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDEwOjA5OjE4LjkxNjM0MCIsInVzZXJfaWQiOiJmNGUxMzMyZC0wMDRmLTQwOGEtOTY1YS02M2VjYzE1ZTY4MTMifQ.gFY84Pf2yWZvVneZnRZ1YYFxQ96DvAoPYFMbGSpWJNQ' \
+   -H 'content-length: 370' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Husband today early.","maxScore":57,"minScore":12,"description":"Soon social where almost thought morning girl table.\nRange support bank most or in single night. Program five size box hard. Or share want life note four.","estimatedTime":"8 weeks","previewFileId":"01913708-831f-49da-95fa-b8b6f62155d4","createdByUserId":"f4e1332d-004f-408a-965a-63ecc15e6813"}'
