@@ -9,8 +9,9 @@ on:
       - main
 
 jobs:
-  prepare:
+  run-tests:
     runs-on: ubuntu-latest
+
     steps:
       - name: Проверка репозитория
         uses: actions/checkout@v4
@@ -20,10 +21,6 @@ jobs:
         with:
           python-version: '3.12'
 
-  run_test_server:
-    needs: prepare
-    runs-on: ubuntu-latest
-    steps:
       - name: Клонирование тестового сервера
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
 
@@ -33,20 +30,12 @@ jobs:
       - name: Запуск тестового сервера
         env:
           APP_HOST: "http://localhost:8000"
-          DATABASE_URL: "sqlite+aiosqlite:///./local.db" # Устанавливаем URL локальной базы данных
-          JWT_ALGORITHM: "HS256" # Алгоритм для JWT токенов
-          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key" # Секретный ключ для JWT
-          JWT_ACCESS_TOKEN_EXPIRE: 1800 # Время жизни access token (в секундах)
-          JWT_REFRESH_TOKEN_EXPIRE: 5184000 # Время жизни refresh token (в секундах)
+          DATABASE_URL: "sqlite+aiosqlite:///./local.db"
+          JWT_ALGORITHM: "HS256"
+          JWT_SECRET_KEY: "qa-automation-engineer-api-course-secret-key"
+          JWT_ACCESS_TOKEN_EXPIRE: 1800
+          JWT_REFRESH_TOKEN_EXPIRE: 5184000
         run: uvicorn main:app --host 0.0.0.0 --port 8000 --app-dir ./qa-automation-engineer-api-course &
-
-  run_tests:
-    needs: run_test_server
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Проверка репозитория с тестами
-        uses: actions/checkout@v4
 
       - name: Установка зависимостей тестов
         run: |
@@ -55,12 +44,12 @@ jobs:
 
       - name: Запуск API тестов и генерация отчета Allure
         run: |
-          pytest -m regression --alluredir=allure-results --numprocesses 2
+          pytest -m regression --alluredir=allure-results --numprocesses=2
 
       - name: Сохранение отчёта Allure как артефакта
         uses: actions/upload-artifact@v4
         with:
-          name: Allure results
+          name: allure-results
           path: allure-results
 
   publish_report:
@@ -69,19 +58,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Получение Allure отчёта
-        uses: actions/download-artifact@v4
-        with:
-          name: Allure results
-          path: allure-results
-
-      - name: Получение Allure-истории
+      - name: Проверка репозитория
         uses: actions/checkout@v4
-        if: always()
-        continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
+
+      - name: Загрузка результатов Allure
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       - name: Генерация Allure отчета с историей
         uses: simple-elf/allure-report-action@v1.7
