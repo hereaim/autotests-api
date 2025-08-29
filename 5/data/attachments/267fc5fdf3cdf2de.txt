@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjIxLjM2NzY3MiIsInVzZXJfaWQiOiI4NDg2MTQzNy1lMTgyLTQyOTEtODk5YS05NGVkZjAxODVlZjcifQ.AZ69VHd7WYVONcLe4hP6gX5Vy-udWfZegdgi9bHRdZQ' \
+   -H 'content-length: 430' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Industry art family pressure clear out tree.","maxScore":79,"minScore":41,"description":"Will fish develop administration. Democrat data tell direction statement condition. Ahead simple player over. Number discuss street reduce level name apply.\nInvestment girl operation memory.","estimatedTime":"5 weeks","previewFileId":"49f22764-77fc-42b1-9eb7-2ddfdfb858f9","createdByUserId":"84861437-e182-4291-899a-94edf0185ef7"}'

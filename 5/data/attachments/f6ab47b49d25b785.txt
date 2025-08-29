@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjIxLjA5NDQ5OCIsInVzZXJfaWQiOiI3MTdkYzRhNi0yMmRkLTQ2NTgtOWRhYS1kMTgwNWNkNmU2Y2MifQ.28YUDXNL4gJh89v1SW-uTR6ugrGvtHgPO36SutIWXe8' \
+   -H 'content-length: 326' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Treatment call senior.","maxScore":55,"minScore":8,"description":"Message teach design plan write population. Under long nature animal goal its. Radio use low citizen anything.","estimatedTime":"4 weeks","previewFileId":"1b81e0b8-891d-4477-b7b9-c8e453d4b3fe","createdByUserId":"717dc4a6-22dd-4658-9daa-d1805cd6e6cc"}'

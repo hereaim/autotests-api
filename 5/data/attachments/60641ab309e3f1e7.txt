@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/courses/3a992cbc-311d-4ba2-b7ff-744365a9bafb' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjE5Ljg4NjA2OSIsInVzZXJfaWQiOiI2YzhhN2IwNi1jY2FmLTQ5YjQtOThiMC0yZmE4ZWZkNzFmZTkifQ.G8FArTcXnSaNbh6CU0BICS0lf6J62rpk0nogM8FbHAo' \
+   -H 'content-length: 257' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Run public drug job glass happen country.","maxScore":83,"minScore":48,"description":"Throw difference site cost once position former. Sit fine subject expert.\nActually how environment window figure. Health foreign PM.","estimatedTime":"2 weeks"}'

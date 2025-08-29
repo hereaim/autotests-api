@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to '200'
+INFO     COURSES_ASSERTIONS:courses.py:88 Check create course response
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Summer almost enter meet low former though.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '85'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '20'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Machine value like describe hair help experience. Reality nature natural.
+Much activity other catch important story. Dark our beyond painting stay only. Require require last.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '3 weeks'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'preview_file_id' equals to '785e8f29-04b0-4347-b40a-4369f56f5ac9'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'created_by_user_id' equals to '5e1d0b86-3803-4cd6-a187-92af346d72fe'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

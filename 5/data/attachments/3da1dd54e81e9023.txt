@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:25 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:25 Make PATCH request to http://localhost:8000/api/v1/exercises/883ba7e8-3356-4190-b872-7692b1ee59e0
+INFO     HTTP_CLIENT:event_hooks.py:34 Got response 200 OK from http://localhost:8000/api/v1/exercises/883ba7e8-3356-4190-b872-7692b1ee59e0
+INFO     BASE_ASSERTIONS:base.py:19 Check that response status code equals to '200'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'title' equals to 'Here social eight turn visit.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'max_score' equals to '73'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'min_score' equals to '9'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'order_index' equals to '61'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'description' equals to 'Maintain attorney may seven system pull any. Act second because hand space. Political pressure near could community.
+Reach toward lawyer total little. Send still rule also.'
+INFO     BASE_ASSERTIONS:base.py:37 Check that 'estimated_time' equals to '6 weeks'
+INFO     SCHEMA_ASSERTIONS:schema.py:21 Validate JSON schema

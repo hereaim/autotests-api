@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjIyLjI5MDU3MSIsInVzZXJfaWQiOiI3MjRhNzYyZi1hMTg4LTRlMDEtOGI2NS0xOGI0ZWJiODE2NzIifQ.GlZTDnGkeRPFMcwPH8zfiNivn_MlD_xsRGUd2Zp2LmA' \
+   -H 'content-length: 393' \
+   -H 'content-type: application/json' \
+   -d '{"title":"If our reality already.","maxScore":72,"minScore":25,"description":"Someone establish agree finish. Action cost top rest yourself and.\nOrganization seek million modern stuff relationship. Eight author along those. Single early professor step.","estimatedTime":"7 weeks","previewFileId":"b061f603-99c7-4ff4-a26a-33a9258d0da7","createdByUserId":"724a762f-a188-4e01-8b65-18b4ebb81672"}'

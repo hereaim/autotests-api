@@ -1,0 +1,11 @@
+curl -X'PATCH' \
+   'http://localhost:8000/api/v1/exercises/883ba7e8-3356-4190-b872-7692b1ee59e0' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjIxLjM2NzY3MiIsInVzZXJfaWQiOiI4NDg2MTQzNy1lMTgyLTQyOTEtODk5YS05NGVkZjAxODVlZjcifQ.AZ69VHd7WYVONcLe4hP6gX5Vy-udWfZegdgi9bHRdZQ' \
+   -H 'content-length: 300' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Here social eight turn visit.","maxScore":73,"minScore":9,"orderIndex":61,"description":"Maintain attorney may seven system pull any. Act second because hand space. Political pressure near could community.\nReach toward lawyer total little. Send still rule also.","estimatedTime":"6 weeks"}'

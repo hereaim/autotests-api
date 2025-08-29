@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjIyLjU2NDkwMSIsInVzZXJfaWQiOiJkZDk0ZTA2OC0yNGYxLTRjODItYTFjMy1mNDNlZGNmNDNhYzkifQ.2nmjn0-POY5u4i2XW8vk5Ok9tkfcNkj3h05r8xxCcY4' \
+   -H 'content-length: 319' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Serious budget begin action.","maxScore":97,"minScore":28,"description":"South walk name college. Letter everybody beat take stop road. Draw they start true source have.","estimatedTime":"3 weeks","previewFileId":"f4c12556-a835-4315-b9d8-ff5fa20af2d9","createdByUserId":"dd94e068-24f1-4c82-a1c3-f43edcf43ac9"}'

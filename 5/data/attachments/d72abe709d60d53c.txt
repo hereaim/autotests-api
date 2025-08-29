@@ -1,0 +1,11 @@
+curl -X'POST' \
+   'http://localhost:8000/api/v1/courses' \
+   -H 'host: localhost:8000' \
+   -H 'accept: */*' \
+   -H 'accept-encoding: gzip, deflate' \
+   -H 'connection: keep-alive' \
+   -H 'user-agent: python-httpx/0.28.1' \
+   -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA4LTI5VDA4OjU2OjE5Ljg4NjA2OSIsInVzZXJfaWQiOiI2YzhhN2IwNi1jY2FmLTQ5YjQtOThiMC0yZmE4ZWZkNzFmZTkifQ.G8FArTcXnSaNbh6CU0BICS0lf6J62rpk0nogM8FbHAo' \
+   -H 'content-length: 343' \
+   -H 'content-type: application/json' \
+   -d '{"title":"Middle spend especially sport.","maxScore":78,"minScore":1,"description":"Office record pass second method teach idea. Hand bag behind tough bag. Around movement toward society building within.","estimatedTime":"3 weeks","previewFileId":"92776741-9dc9-463a-9d48-ad2c83fbfca8","createdByUserId":"6c8a7b06-ccaf-49b4-98b0-2fa8efd71fe9"}'
